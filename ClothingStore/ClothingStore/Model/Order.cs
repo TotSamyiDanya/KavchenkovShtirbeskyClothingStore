@@ -1,4 +1,6 @@
-﻿namespace ClothingStore.Model
+﻿using Newtonsoft.Json;
+
+namespace ClothingStore.Model
 {
     public class Order
     {
@@ -8,6 +10,7 @@
         public string OrderCustomerEmail { get; set; }
         public string OrderDestination { get; set; }
         public virtual ICollection<OrderCloth> Clothes { get; set; }
+        [JsonIgnore]
         public virtual Store OrderStore { get; set; }
     }
 }

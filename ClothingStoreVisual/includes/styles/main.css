@@ -1,0 +1,221 @@
+html, body { height: 100%; width: 100%; background-color: black; }
+* { font-family: 'Montserrat', sans-serif; }
+body::-webkit-scrollbar { width: 0; display: none; }
+
+
+
+
+/*Анимации: Начало*/
+#header_logo_genders a:hover { text-decoration: underline 0.1vw solid white; text-underline-offset: 0.3vw; }
+#header_nav nav li a:hover { text-decoration: underline 0.1vw solid white; text-underline-offset: 0.3vw; }
+#main_categories img:hover { scale: 1.02; cursor: pointer; }
+#brands_imgs svg:hover { scale: 1.02; cursor: pointer; } 
+.card:hover { scale: 1.02; cursor: pointer; }
+#navigation a:hover { text-decoration: underline 0.1vw solid white; text-underline-offset: 0.3vw; }
+#logo a:hover { text-decoration: underline 0.1vw solid black; text-underline-offset: 0.3vw; }
+/*Анимации: Конец*/
+
+
+
+
+/*Верхняя часть страницы: Начало*/
+#header { height: 12vw; background-color: black; }
+	/*Выбор магазина: Начало*/
+#header_stores { width: 65%; height: 25%; position: relative; left: 50%; transform: translate(-50%, 0); border-bottom: 0.16vw solid white; }
+#header_stores select { height: 100%; font-size: 0.9vw; outline: none; border: none; background-color: transparent; color: white; }
+#header_stores select option { color: black; }
+	/*Выбор магазина: Конец*/
+	/*Лого и пол: Конец*/
+#header_logo_genders { display: inline-block; width: 65%; height: 30%; position: relative; left: 50%; transform: translate(-50%,0); }
+#header_logo_genders a { display: inline-block; position: relative; top: 50%; transform: translate(0,-50%); margin-right: 2vw; font-size: 1.2vw; text-decoration: none; color: white; border-bottom: 0.15vw solid black; }
+#header_logo_genders h1 { display: inline; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); font-size: 2.5vw; font-weight: 700; color: white; }
+	/*Лого и пол: Конец*/
+	/*Навигация: Начало*/
+#header_nav { width: 65%; height: 45%; position: relative; left: 50%; transform: translate(-50%,0); padding-left: 0px; }
+#header_nav nav li a { padding-left: 0px; padding-right: 1.5vw; }
+#header_nav nav { position: relative; height: 100%; font-size: 1.1vw; padding-right: 0px; }
+#header_nav nav input { border-color: black; outline: none; padding-left: 0.7vw; padding-top: 0.5vw; padding-bottom: 0.3vw; }
+#header_nav nav button { background-color: white; border-color: black; outline: none; }
+#header_nav nav button svg { width: 2vw; height: 1.5vw; }
+#logo a { display: inline; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); font-size: 2.5vw; font-weight: 700; color: white; }
+
+#header_basket  { position: absolute; right: 0px; vertical-align: middle; }
+	/*Навигация: Конец*/
+/*Верхняя часть страницы: Конец*/
+
+/*Главная часть страницы: Начало*/
+#main { background-color: black; padding-top: 2vw; }
+
+	/*Категории: Начало*/
+#main_categories { width: 65%; position: relative; left: 50%; transform: translate(-50%,0);  }
+
+#main_categories_gender { width: 70%; height: 30vw; }
+#main_categories_gender img { width: 45%; height: 100%; transition: .1s linear; }
+
+#main_categories_other { position: absolute; width: 30%; height: 30vw; top: 0; right: 0; padding-right: 0px; }
+#main_categories_other img { position: absolute; width: 100%; height: 46.5%; right: 0px; transition: 0.1s linear; }
+#main_categories_other #sale_img { bottom: 0; }
+#main_categories_gender #woman_img { margin-left: 2vw; }
+	/*Категории: Конец*/
+
+	/*Лента брэндов: Начало*/
+#brands { position: relative; height: 10vw; margin-top: 3vw; background-color: white; }
+#brands div { height: 100%; }
+#brands img { position: relative; }
+#brands #brands_imgs { position: relative; left: 50%; transform: translate(-50%,0); width: 80%; }
+#brands #brands_imgs svg { position: relative; top: 50%; transform: translate(0,-50%); margin-left: 4vw; margin-right: 1.3vw; height: 6vw; width: 10vw; transition: 0.1s linear; }
+	/*Лента брэндов: Конец*/
+
+
+#main_new { position: relative; left: 50%; transform: translate(-50%,0); padding-top: 3vw; width: 90%; }
+#main_new .card-group { width: 80%; height: 100%; position: relative; left: 50%; transform: translate(-50%,0); }
+#main_new .card { width: 14vw; height: 30vw; margin-left: 3.1vw; background-color: black; color: white; text-align: left; border-radius: 0px; transition: 0.1s linear; }
+#main_new .card img { border-radius: 0px; }
+#main_new .card a { position: absolute; bottom: 0px; text-decoration: none; }
+#main_new .card #price { right: 0px; text-decoration: line-through; }
+#main_new_carousel {  }
+#main_new_carousel .carousel-inner { width: 100%; }
+#main_new_carousel .carousel-inner { width: 65%; background-color: red; }
+#main_new_h3 { position: relative; display: inline-block; left: 50%; transform: translate(-50%,0); color: white; font-size: 2vw; font-weight: 400; margin-bottom: 3vw; }
+
+
+#main_popular { position: relative; left: 50%; transform: translate(-50%,0); padding-top: 3vw; width: 90%;}
+#main_popular .card-group { width: 80%; height: 100%; position: relative; left: 50%; transform: translate(-50%,0); }
+#main_popular .card { width: 14vw; height: 30vw; margin-left: 3.1vw; background-color: black; color: white; text-align: left; border-radius: 0px; transition: 0.1s linear; }
+#main_popular .card img { border-radius: 0px; }
+#main_popular .card a { position: absolute; bottom: 0px; text-decoration: none; }
+#main_popular .card #price { right: 0px; text-decoration: line-through; }
+#main_popular_carousel {  }
+#main_popular_carousel .carousel-inner { width: 100%; }
+#main_popular_carousel .carousel-inner { width: 65%; background-color: red; }
+#main_popular_h3 { position: relative; display: inline-block; left: 50%; transform: translate(-50%,0); color: white; font-size: 2vw; font-weight: 400; margin-bottom: 1vw; }
+	
+	/*Окно для скидки: Начало*/
+#main_sale { background-color: white; margin-top: 3vw; padding-top: 1.5vw; padding-bottom: 1.5vw; }
+#main_sale_form { position: relative; left: 50%; transform: translate(-50%,0); width: 65%; height: 11vw; padding-top: 2vw; background-color: white; }
+#main_sale_form form { position: absolute; right: 0px; top: 50%; transform: translate(0,-50%); width: 50%; height: 8vw;  }
+#main_sale_form_inputs input { width: 70%; height: 3vw; font-size: 1.2vw; border: 1px solid black; outline: none; }
+#main_sale_form_inputs button { width: 30%; height: 3vw; font-size: 1.2vw; border: 1px solid black; background-color: white; margin-left: 0.3vw; }
+#main_sale_form_inputs .check { width: 1.2vw; height: 1.2vw; position: absolute; bottom: 1.8vw; }
+#main_sale_form_inputs label { display: inline; position: absolute; bottom: 0.2vw; left: 2.1vw; height: 3.2vw; width: 80%; font-size: 1.1vw; }
+
+#main_sale_form_message { position: absolute; top: 50%; transform: translate(0,-50%); height: 8vw; width: 50%; }
+#main_sale_form_message_mes1 { font-size: 1.8vw; }
+#main_sale_form_message_mes2 { font-size: 1.3vw; }
+#main_sale_form_message_logo { font-size: 1.8vw; font-weight: 800; font-style: bold; margin-top: 1.3vw; }
+	/*Окно для скидки: Конец*/
+/*Главная страница: Конец*/
+
+/*Нижняя часть страницы: Начало*/
+	/*Таблица: Начало*/
+#footer { margin-top: 3vw; }
+#footer_content { width: 75%; position: relative; left: 50%; transform: translate(-50%,0); border-top: 0.16vw solid white; color: white; }
+#footer table { width: 65%; margin-top: 1vw; }
+#footer table th { border-color: black; font-size: 1.4vw; font-weight: 500; color: white; }
+#footer table td { border-color: black; font-size: 1.2vw; font-weight: 400; color: white; height: 0.6vw; }
+	/*Таблица: Конец*/
+
+#footer_sale_form { position: absolute; right: 0px; top: 0px; width: 30%; height: 100%; }
+#footer_sale_form_inputs { position: relative; left: 100%; transform: translate(-100%, 0); font-weight: 500; }
+#footer_sale_form_inputs button { font-size: 1.1vw; margin-left: 0.2vw; height: 1.9vw; outline: none; border: none; background-color: white; }
+#footer_sale_form_inputs input { font-size: 1.1vw; height: 1.9vw; outline: none; border: none; }
+#footer_sale_form_inputs label { font-size: 1.4vw; margin-bottom: 1vw; margin-top: 1.4vw; }
+/*Нижняя часть страницы: Конец*/
+
+
+
+
+
+
+
+
+
+#main_assortment { background-color: black; margin-top: 3vw; height: 60vw; overflow-x: hidden; }
+#main_assortment {  width: 65%; position: relative; left: 50%; transform: translate(-50%,0); }
+#main_assortment .card-group { width: 84%; position: relative; left: 100%; transform: translate(-100%,0); margin-bottom: 2vw; }
+#main_assortment .card { width: 12vw; height: 25vw; margin-left: 1.15vw; background-color: black; color: white; text-align: left; border-radius: 0px; transition: 0.1s linear; }
+#main_assortment .card img { border-radius: 0px; }
+#main_assortment .card a { position: absolute; bottom: 0px; text-decoration: none; }
+#main_assortment .card #price { right: 0px; text-decoration: line-through; }
+
+
+
+#main_assortment_sort { position: absolute; left: 19.9%; transform: translate(-19.9%,0); display: flex; flex-direction: column; width: 12vw; z-index: 1; margin-top: 2.6vw; }
+#main_assortment_sort h4 { font-size: 1.4vw; }
+#main_assortment_sort label { font-size: 1.1vw; }
+.checks { display: flex; flex-direction: column;  }
+.checks input { width: 1.2vw; height: 1.2vw; border: 0.6vw solid darkred; outline: none; background-color: black; color: black; margin-bottom: 0.4vw; }
+
+.price_sort { display: flex; flex-direction: row; }
+
+
+#price_sort_form * { display: block; margin-bottom: 0.5vw; color: white; }
+#price_sort_form input { color: black; outline: none; border: none; height: 2vw; font-size: 1.1vw; width: 10vw; }
+#price_sort_form input:hover { outline: none; }
+#brands_sort_form * { position: relative; left: 0px; display: block; text-align: left; color: white; }
+#sizes_sort_form * { position: relative; left: 0px; display: block; text-align: left; color: white; }
+
+#navigation { color: white; width: 65%; position: relative; left: 50%; transform: translate(-50%, 0); }
+#navigation a { font-size: 1vw; }
+#navigation * { font-size: 1vw; }
+#navigation *:hover { text-decoration: underline 0.1vw solid white; text-underline-offset: 0.3vw; }
+
+
+#main_assortment::-webkit-scrollbar {
+  width: 1.2vw;
+}
+
+#main_assortment::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+#main_assortment::-webkit-scrollbar-thumb {
+  background-color: white;
+}
+
+#main_card {
+	position: relative;
+	left: 50%;
+	transform: translate(-50%, 0);
+	width: 65%;
+	padding-top: 3vw;
+	background-color: grey;
+}
+
+#main_card .card:hover { scale:1.0;  background-color: grey;}
+#main_card { border-radius: 0px; background-color: black; background-color: grey; }
+#main_card img { border-radius: 0px; }
+#main_card div {  }
+#main_card img { width: 20vw; }
+#main_card p { color: white; font-size: 1.2vw; }
+#main_card h5 { color: white; font-size: 2vw; }
+#main_card small { color: white; margin-right: 2vw;}
+#main_card .col-md-8 { width: 40%; padding-left: 0px; background-color: black; margin-left: 5vw; background-color: grey; }
+#main_card .col-md-8 p { position: relative; left: 0px; }
+#main_card form {  }
+#main_card form button { margin-right: 1vw; height: 3.5vw; width: 3.5vw; font-size: 1.1vw; background-color: black; color: white; outline: none; border: 0.1vw solid white;}
+#main_card form input { background-color: white; color: black; }
+#main_card form button:hover { scale: 1.1; transition: linear 0.1s; background-color: white; color: black; }
+
+#add_basket:hover { scale: 1.1; transition: linear 0.1s; background-color: white; color: black; }
+
+
+#add_basket { position: absolute; bottom: 11vw; animation-duration: 2s; animation-fill-mode: both; animation-name: fadeIn; }
+
+
+@keyframes fadeIn {
+0% {opacity: 0;}
+99% {opacity: 0;}
+100% {opacity: 1;}
+}
+
+#pages-div { font-size: 2vw; position: relative; left: 65%; transform: translate(-65%, 0); width: 50%; border: 0.1vw solid black; }
+#pages-div a { margin-left: 4vw; }
+
+
+#main_same { position: relative; left: 50%; transform: translate(-50%,0); padding-top: 3vw; width: 90%; }
+#main_same .card-group { width: 80%; height: 100%; position: relative; left: 50%; transform: translate(-50%,0); }
+#main_same .card { width: 14vw; height: 30vw; margin-left: 3.1vw; background-color: black; color: white; text-align: left; border-radius: 0px; transition: 0.1s linear; }
+#main_same .card img { border-radius: 0px; }
+#main_same .card a { position: absolute; bottom: 0px; text-decoration: none; }
+#main_same .card #price { right: 0px; text-decoration: line-through; }

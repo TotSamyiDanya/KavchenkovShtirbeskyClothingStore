@@ -1,0 +1,109 @@
+* { font-family: 'Montserrat', sans-serif; }
+body { overflow-x: hidden; }
+
+button:hover { scale: 1.02; background-color: black; color: white; }
+
+input { padding-left: 1.3vw; outline: none; border-color: black; }
+
+#add_cloth h3 { font-size: 1.6vw; height: 3.2vw; }
+#add_cloth input { font-size: 1.4vw; height: 3vw; border-radius: 0px; width: 30vw; }
+#add_cloth label { font-size: 1.4vw; height: 3vw; }
+
+#update_cloth h3 { font-size: 1.6vw; height: 3.2vw; }
+#update_cloth input { font-size: 1.4vw; height: 3vw; border-radius: 0px; }
+#update_cloth label { font-size: 1.4vw; height: 3vw; }
+
+#add_cloth { margin-top: 5vw; padding-top: 1vw; }
+#add_cloth { width: 65%; position: relative; left: 50%; transform: translate(-50%,0); color: white; }
+#add_cloth div { width: 50%; }
+#add_cloth button { width: 30vw; border-color: white; color: black; font-size: 1.8vw; font-weight: 700; border: none; background-color: white; transition: 0.1s linear; }
+#formFile { font-size: 1.4vw; }
+
+#update_cloth { margin-top: 5vw; margin-bottom: 5vw; border-top: 0.16vw solid white; padding-top: 1vw; }
+#update_cloth { width: 65%; position: relative; left: 50%; transform: translate(-50%,0); color: white; }
+#update_cloth div { width: 50%; }
+#update_cloth button { width: 30vw; border-color: white; color: black; font-size: 1.8vw; font-weight: 700; border: none; background-color: white; transition: 0.1s linear;}
+
+.update_cloth_size { display: flex; flex-direction: row; }
+.update_cloth_size { margin-bottom: 2vw; }
+.update_cloth_size label {}
+.update_cloth_size input { position: absolute; left: 4vw; width: 26vw; }
+
+#add_cloth_form select { font-size: 1.6vw; position: relative; margin-left: 2vw; }
+#add_cloth_form .add_cloth_size { display: flex; flex-direction: row; }
+#add_cloth_form .add_cloth_size { margin-bottom: 2vw; }
+#add_cloth_form .add_cloth_size label {}
+#add_cloth_form .add_cloth_size input { position: absolute; left: 4vw; width: 26vw; }
+
+
+.mb-3 input { width: 30vw; }
+
+
+button:hover { scale: 1.02; background-color: black; color: white; }
+
+
+#header { height: 5vw; border-bottom: 0.16vw solid white; width: 100%; position: relative; left: 50%; transform: translate(-50%,0); }
+#header_logo_genders h1 { display: inline; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); font-size: 2.5vw; font-weight: 700; color: white; }
+#header_logo_genders h1 a { text-decoration: none; color: white; }
+#header_logo_genders { height: 5vw; }
+
+#header ul { display: flex; flex-direction: row; padding-left: 0px; padding-top: 1vw; width: 65%; position: relative; left: 50%; transform: translate(-50%,0); list-style: none; }
+#header ul a { color: white; text-decoration: none; position: relative; margin-right: 1vw; font-size: 1.2vw; }
+#header li:hover { text-decoration: underline 0.1vw solid white; text-underline-offset: 0.3vw; }
+
+#update_cloth_form select { font-size: 1.6vw; position: relative; margin-left: 2vw; }
+
+#show_clothes { position: relative; width: 65%; left: 50%; transform: translate(-50%,0); margin-top: 5vw; background-color: black; }
+
+#show_clothes button { width: 20vw; height: 2.2vw; border-color: white; color: black; font-size: 1.4vw; font-weight: 700; border: none; background-color: white; transition: 0.1s linear; margin-left: 2vw;}
+#show_clothes select { font-size: 1.4vw; position: relative; height: 2.3vw; }
+
+#show_clothes_table { margin-top: 3vw; background-color: black; max-height: 35vw; overflow: scroll; overflow-x: hidden; }
+
+#table_show { color: white; width: 100%; font-size: 1.1vw; position: relative;  }
+#table_show img { width: 7vw; height: 10vw; }
+#table_show tr { position: relative; margin-bottom: 3vw; border-bottom: 0.1vw solid white; padding-top: 0.2vw; padding-bottom: 0.2vw; }
+#table_show td { width: 10vw; padding-top: 1vw; padding-bottom: 1vw; text-align: left; }
+
+#title { color: white; width: 100%; font-size: 1vw; position: relative; margin-top: 3vw; }
+#title th { width: 16vw; }
+
+#show_clothes_table::-webkit-scrollbar {
+  width: 1.2vw;
+}
+
+#show_clothes_table::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+#show_clothes_table::-webkit-scrollbar-thumb {
+  background-color: white;
+}
+
+
+#show_orders { position: relative; width: 65%; left: 50%; transform: translate(-50%,0); margin-top: 5vw; background-color: black; }
+
+#show_orders button { width: 20vw; height: 2.2vw; border-color: white; color: black; font-size: 1.4vw; font-weight: 700; border: none; background-color: white; transition: 0.1s linear; margin-left: 2vw;}
+#show_orders select { font-size: 1.4vw; position: relative; height: 2.3vw; }
+
+#show_orders_table { margin-top: 3vw; background-color: black; max-height: 35vw; overflow: scroll; overflow-x: hidden; }
+
+#table_show_orders { color: white; width: 100%; font-size: 1.1vw; position: relative;  }
+#table_show_orders img { width: 7vw; height: 10vw; }
+#table_show_orders tr { position: relative; margin-bottom: 3vw; border-bottom: 0.1vw solid white; padding-top: 0.2vw; padding-bottom: 0.2vw; }
+#table_show_orders td { width: 5vw; padding-top: 1vw; padding-bottom: 1vw; text-align: left; }
+
+#title_order { color: white; width: 100%; font-size: 1vw; position: relative; margin-top: 3vw; }
+#title_order th { width: 10vw; }
+
+#show_orders_table::-webkit-scrollbar {
+  width: 1.2vw;
+}
+
+#show_orders_table::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+#show_orders_table::-webkit-scrollbar-thumb {
+  background-color: white;
+}

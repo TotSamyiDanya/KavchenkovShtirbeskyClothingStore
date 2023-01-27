@@ -1,0 +1,95 @@
+html, body { height: 100%; width: 100%; background-color: black; }
+* { font-family: 'Montserrat', sans-serif; }
+body::-webkit-scrollbar { width: 0; display: none; }
+
+
+
+
+/*Анимации: Начало*/
+#header_logo_genders a:hover { text-decoration: underline 0.1vw solid white; text-underline-offset: 0.3vw; }
+#header_nav nav li a:hover { text-decoration: underline 0.1vw solid white; text-underline-offset: 0.3vw; }
+#navigation a:hover { text-decoration: underline 0.1vw solid white; text-underline-offset: 0.3vw; }
+#logo a:hover { text-decoration: underline 0.1vw solid black; text-underline-offset: 0.3vw; }
+#main_card_body_form_sizes input:hover { scale: 1.1; }
+#main_card_body_form button:hover { scale: 1.05; }
+#main_new_carousel .card:hover { scale: 1.05; }
+/*Анимации: Конец*/
+
+
+
+
+/*Верхняя часть страницы: Начало*/
+#header { height: 12vw; background-color: black; }
+	/*Выбор магазина: Начало*/
+#header_stores { width: 65%; height: 25%; position: relative; left: 50%; transform: translate(-50%, 0); border-bottom: 0.16vw solid white; }
+#header_stores select { height: 100%; font-size: 0.9vw; outline: none; border: none; background-color: transparent; color: white; }
+#header_stores select option { color: black; }
+	/*Выбор магазина: Конец*/
+	/*Лого и пол: Конец*/
+#header_logo_genders { display: inline-block; width: 65%; height: 30%; position: relative; left: 50%; transform: translate(-50%,0); }
+#header_logo_genders a { display: inline-block; position: relative; top: 50%; transform: translate(0,-50%); margin-right: 2vw; font-size: 1.2vw; text-decoration: none; color: white; border-bottom: 0.15vw solid black; }
+#header_logo_genders h1 { display: inline; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); font-size: 2.5vw; font-weight: 700; color: white; }
+	/*Лого и пол: Конец*/
+	/*Навигация: Начало*/
+#header_nav { width: 65%; height: 45%; position: relative; left: 50%; transform: translate(-50%,0); padding-left: 0px; }
+#header_nav nav li a { padding-left: 0px; padding-right: 1.5vw; }
+#header_nav nav { position: relative; height: 100%; font-size: 1.1vw; padding-right: 0px; }
+#header_nav nav input { border-color: black; outline: none; padding-left: 0.7vw; padding-top: 0.5vw; padding-bottom: 0.3vw; }
+#header_nav nav button { background-color: white; border-color: black; outline: none; }
+#header_nav nav button svg { width: 2vw; height: 1.5vw; }
+#logo a { display: inline; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); font-size: 2.5vw; font-weight: 700; color: white; }
+
+#header_basket  { position: absolute; right: 0px; vertical-align: middle; }
+	/*Навигация: Конец*/
+/*Верхняя часть страницы: Конец*/
+
+
+/*Главная часть страницы: Начало*/
+#main { background-color: black; }
+#main_card { width: 65%; position: relative; left: 50%; transform: translate(-50%,0); height: 100%; background-color: black; }
+#main_card_image { width: 40%; border: none; }
+#main_card_image img { width: 22vw; border-radius: 0px; border: none; }
+#main_card_body { width: 60%; }
+#main_card_body_prices p { display: inline; }
+#main_card_body_form { display: flex; flex-direction: column; }
+#brand { color: white; font-size: 1.8vw; }
+#name { color: white; font-size: 1.4vw; }
+#price { color: white; text-decoration: line-through; font-size: 1.3vw; position: relative; margin-left: 2vw; }
+#sale { color: red; font-size: 1.6vw; }
+.message { font-size: 1.4vw; position: relative; padding-bottom: 1.5vw; }
+#main_card_body_form_sizes { position: relative; margin-top: 1.3vw; }
+#main_card_body_form_sizes input { height: 3.5vw; width: 3.5vw; border: 0.1vw solid white; background-color: black; color: white; font-size: 1.3vw; position: relative; margin-right: 1vw; transition: 0.1s linear; }
+#main_card_body_form button { font-size: 1.7vw; width: 20vw; border: none; background-color: white; outline: none; position: relative; margin-top: 2.2vw; transition: 0.1s linear; }
+
+
+#main_assortment { background-color: black; margin-top: 1vw; height: 60vw; overflow-x: hidden; }
+#main_assortment {  width: 65%; position: relative; left: 50%; transform: translate(-50%,0); }
+#main_new_carousel .card-group { width: 60%; position: relative; left: 50%; transform: translate(-50%,0); margin-bottom: 2vw; }
+#main_new_carousel .card { width: 12vw; height: 25vw; margin-left: 2.35vw; background-color: black; color: white; text-align: left; border-radius: 0px; transition: 0.1s linear; }
+#main_new_carousel .card img { border-radius: 0px; }
+#main_new_carousel .card a { position: absolute; bottom: 0px; text-decoration: none; }
+#main_new_carousel .card #price { right: 0px; text-decoration: line-through; }
+
+
+
+#main_new_h3 { color: white; position: relative; left: 41%; transform: translate(-50%, 0); display: inline;  font-size: 2vw;}
+
+#carouselExample { position: relative; margin-top: 2vw; }
+
+/*Главная часть страницы: Конец*/
+
+/*Нижняя часть страницы: Начало*/
+	/*Таблица: Начало*/
+#footer { margin-top: 3vw; }
+#footer_content { width: 75%; position: relative; left: 50%; transform: translate(-50%,0); border-top: 0.16vw solid white; color: white; }
+#footer table { width: 65%; margin-top: 1vw; }
+#footer table th { border-color: black; font-size: 1.4vw; font-weight: 500; color: white; }
+#footer table td { border-color: black; font-size: 1.2vw; font-weight: 400; color: white; height: 0.6vw; }
+	/*Таблица: Конец*/
+
+#footer_sale_form { position: absolute; right: 0px; top: 0px; width: 30%; height: 100%; }
+#footer_sale_form_inputs { position: relative; left: 100%; transform: translate(-100%, 0); font-weight: 500; }
+#footer_sale_form_inputs button { font-size: 1.1vw; margin-left: 0.2vw; height: 1.9vw; outline: none; border: none; background-color: white; }
+#footer_sale_form_inputs input { font-size: 1.1vw; height: 1.9vw; outline: none; border: none; }
+#footer_sale_form_inputs label { font-size: 1.4vw; margin-bottom: 1vw; margin-top: 1.4vw; }
+/*Нижняя часть страницы: Конец*/

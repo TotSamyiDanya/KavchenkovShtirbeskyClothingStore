@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Магазин одежды</title>
+	<link rel="stylesheet" type="text/css" href="includes\styles\main.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,300;1,400;1,500&display=swap" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body style="background-color: black;">
+	<div id="header">
+		<div id="header_stores">
+			<select id="header_stores_select">
+				<option value="Смоленск">г.Смоленск</option>
+				<option value="Москва">г.Москва</option>
+				<option value="Тула">г.Тула</option>
+				<option value="Краснодар">г.Краснодар</option>
+				<option value="Санкт-Петербург">г.Санкт-Петербург</option>
+			</select>
+		</div>
+		<div id="header_logo_genders">
+			<a href="assortment.html?gender=Мужчина" id="assortment_man_link">Мужчинам</a>
+			<a href="assortment.html?gender=Женщина" id="assortment_woman_link">Женщинам</a>
+			<h1 id="logo">LOGO</h1>
+			<div id="header_basket">
+				<a href="basket.html">
+					<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-basket3" viewBox="0 0 16 16">
+  						<path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM3.394 15l-1.48-6h-.97l1.525 6.426a.75.75 0 0 0 .729.574h9.606a.75.75 0 0 0 .73-.574L15.056 9h-.972l-1.479 6h-9.21z"/>
+					</svg>
+				</a>
+			</div>
+		</div>
+		<div id="header_nav">
+			<nav class="navbar navbar-expand-lg" style="background-color: black; color: white;">
+  				<div class="container-fluid" style="padding-left: 0px; padding-right: 0px;">
+    				<div class="collapse navbar-collapse" id="navbarSupportedContent" >
+      					<ul class="navbar-nav me-auto mb-2 mb-lg-0" id="assortmentNav">
+        					
+      					</ul>
+      					<form class="d-flex" role="search">
+        					<input class="" type="search" placeholder="Поиск" aria-label="Search">
+        					<button class="" type="submit">
+        						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+  									<path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+								</svg>
+        					</button>
+      					</form>
+    				</div>
+  				</div>
+			</nav>
+		</div>
+		<p id="navigation"></p>
+	</div>
+	<div id="main">
+		<div id="main_assortment_sort">
+				<form id="price_sort_form">
+					<h4>Фильтры</h4>
+					<label>Цена</label>
+					<div class="price_sort">
+						<label>От</label>
+						<input type="text" name="">
+					</div>
+					<div class="price_sort">
+						<label>До</label>
+						<input type="text" name="">
+					</div>
+				</form>
+				<form id="brands_sort_form">
+					<h4>Бренд</h4>
+					<div class="checks">
+						<input type="checkBox" name="">
+						<input type="checkBox" name="">
+						<input type="checkBox" name="">
+						<input type="checkBox" name="">
+						<input type="checkBox" name="">
+						<input type="checkBox" name="">
+						<input type="checkBox" name="">
+					</div>
+				</form>
+				<form id="sizes_sort_form">
+					<h4>Размер</h4>
+					<div class="checks">
+						<input type="checkBox" name="">
+						<input type="checkBox" name="">
+						<input type="checkBox" name="">
+						<input type="checkBox" name="">
+						<input type="checkBox" name="">
+						<input type="checkBox" name="">
+						<input type="checkBox" name="">
+					</div>
+				</form>
+			</div>
+		<div id="main_assortment">
+		</div>
+	</div>
+	<div id="footer">
+		<div id="footer_content">
+			<table class="table">
+  				<thead>
+  					<tr>
+  						<th scope="col">Социальные сети</th>
+			      		<th scope="col">Помощь</th>
+			      		<th scope="col">О нас</th>
+			    	</tr>
+				</thead>
+				<tbody>
+			    	<tr>
+			      		<td id="vk">
+			      			<svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.0" width="22" height="30" id="svg2444" viewBox="200 240 670 670">
+			      				<defs id="defs2446" />
+			      				<g id="layer1">
+			      					<g id="g3257">
+			      						<path d="M 179.92864,32.000013 L 844.07135,32.000013 C 925.76732,32.000013 991.99999,98.230361 991.99999,179.92865 L 991.99999,844.07135 C 991.99999,925.76732 925.76732,991.99998 844.07135,991.99998 L 179.92864,991.99998 C 98.230355,991.99998 32.000006,925.76732 32.000006,844.07135 L 32.000006,179.92865 C 32.000006,98.230361 98.230355,32.000013 179.92864,32.000013" id="path2438" style="fill:black;fill-opacity:1;fill-rule:evenodd;stroke:none" />
+			      						<path d="M 503.94561,704.02937 L 543.21464,704.02937 C 543.21464,704.02937 555.07355,702.72226 561.13718,696.19824 C 566.71036,690.20169 566.53222,678.94892 566.53222,678.94892 C 566.53222,678.94892 565.76414,626.25707 590.21533,618.49765 C 614.32875,610.84928 645.28544,669.422 678.09524,691.94606 C 702.90734,708.98485 721.76221,705.25552 721.76221,705.25552 L 809.501,704.02937 C 809.501,704.02937 855.39584,701.19767 833.63292,665.11199 C 831.85154,662.16461 820.95504,638.41904 768.39506,589.63234 C 713.37584,538.56917 720.75122,546.83061 787.0209,458.5042 C 827.37958,404.71345 843.51149,371.87589 838.47041,357.81224 C 833.66762,344.41255 803.98103,347.95218 803.98103,347.95218 L 705.19537,348.56294 C 705.19537,348.56294 697.86626,347.56583 692.43883,350.81395 C 687.12938,353.99036 683.72163,361.41201 683.72163,361.41201 C 683.72163,361.41201 668.08018,403.03386 647.23571,438.43707 C 603.24717,513.13013 585.65546,517.08387 578.46516,512.4384 C 561.73637,501.6275 565.91683,469.01666 565.91683,445.84252 C 565.91683,373.45368 576.89662,343.272 544.53564,335.45938 C 533.79877,332.86828 525.88898,331.15399 498.42564,330.87406 C 463.17512,330.51547 433.3474,330.98279 416.45436,339.25811 C 405.21547,344.76189 396.54454,357.02334 401.82853,357.72895 C 408.35949,358.59882 423.14264,361.71971 430.98071,372.38486 C 441.10682,386.16164 440.75286,417.08826 440.75286,417.08826 C 440.75286,417.08826 446.57126,502.30072 427.16809,512.88259 C 413.85401,520.14229 395.58676,505.32213 356.36862,437.55563 C 336.27835,402.84415 321.10422,364.47044 321.10422,364.47044 C 321.10422,364.47044 318.18229,357.30096 312.96308,353.46289 C 306.6334,348.81279 297.78896,347.33911 297.78896,347.33911 L 203.91254,347.95218 C 203.91254,347.95218 189.8234,348.34547 184.64583,354.47388 C 180.03969,359.92907 184.27802,371.19804 184.27802,371.19804 C 184.27802,371.19804 257.76808,543.14061 340.9886,629.78975 C 417.30341,709.24396 503.94561,704.02937 503.94561,704.02937" id="path2442" style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none" />
+			      					</g>
+			      				</g>
+			      			</svg>
+			      			Вконтакте
+			      		</td>
+			      		<td>Статус заказа</td>
+			      		<td>Контакты</td>
+			    	</tr>
+			    	<tr>
+			      		<td>
+			      			<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
+			      				<path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"/>
+							</svg>
+							Telegram
+						</td>
+			      		<td>Доставка</td>
+			      		<td>История компании</td>
+			    	</tr>
+			    	<tr>
+			    		<td>
+							<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+  								<path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+							</svg>
+							YouTube
+						</td>
+			      		<td>Возврат</td>
+			      		<td>Магазины</td>
+			    	</tr>
+			    	<tr>
+			    		<td></td>
+			      		<td>Оплата</td>
+			      		<td>Вакансии</td>
+			    	</tr>
+			    	<tr>
+			    		<td></td>
+			      		<td>Часто задаваемые вопросы</td>
+			      		<td></td>
+			    	</tr>
+				</tbody>
+			</table>
+			<div id="footer_sale_form">
+				<div id="footer_sale_form_inputs">
+					<label>Получите скидку 10% за 
+						<br>
+						подписку на нашу рассылку
+					</label>
+					<form class="d-flex" role="search">
+        				<input class="" type="search" placeholder="Введите ваш Email" aria-label="Search">
+        				<button class="" type="submit">
+        					Подписаться
+        				</button>
+      				</form>
+      				<label>8 (___) ___ __ __
+      				<br>	
+						magazin@store.ru
+					</label>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="includes\scripts\assortment.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

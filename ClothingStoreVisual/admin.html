@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Админ</title>
+	<link rel="stylesheet" type="text/css" href="includes\styles\admin.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,300;1,400;1,500&display=swap" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body style="background-color: black;">
+	<div id="header">
+		<div id="header_logo_genders">
+			<h1><a href="index.html">LOGO</a></h1>
+		</div>
+		<div>
+			<ul>
+				<li><a href="#show_clothes">Посмотреть ассортимент</a></li>
+				<li><a href="#add_cloth">Дополнить ассортимент</a></li>
+				<li><a href="#update_cloth">Обновить ассортимент</a></li>
+				<li><a href="#show_orders">Посмотреть заказы</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="show_clothes">
+		<div id="show_clothes_store">
+			<form action="#" method="#" id="show_clothes_form">
+				<select name="store">
+					<option>Смоленск</option>
+					<option>Москва</option>
+					<option>Тула</option>
+				</select>
+				<button type="submit" onclick="getClothes()">Ассортимент магазина</button>
+			</form>
+		</div>
+		<table id="title">
+			<tr>
+				<th style="width: 10vw;">Изображение</th>
+				<th style="width: 15.5vw;">Бренд</th>
+				<th style="width: 18vw;">Название</th>
+				<th style="width: 11vw;">Цена</th>
+				<th style="width: 9vw;">Скидка</th>
+				<th style="width: 11vw;">M</th>
+				<th style="width: 11vw;">L</th>
+				<th style="width: 11vw;">XL</th>
+				<th style="width: 11vw;">XXL</th>
+			</tr>
+		</table>
+		<div id="show_clothes_table">
+			<table id="table_show">
+			</table>
+		</div>
+	</div>
+	<div id="add_cloth">
+		<h3>Добавить одежду</h3>
+		<form id="add_cloth_form" action="#" method="#">
+			<div class="mb-3">
+	  			<input style="outline: none;" name="name" type="text" placeholder="Введите название">
+			</div>
+			<div class="mb-3">
+	  			<input type="text" name="brand" placeholder="Введите бренд">
+			</div>
+			<div class="mb-3">
+	  			<input type="text" name="category" placeholder="Введите категорию">
+			</div>
+			<div class="mb-3">
+	  			<input type="text" name="gender" placeholder="Введите пол">
+			</div>
+			<div class="mb-3">
+	  			<input type="text" name="price" placeholder="Введите цену">
+			</div>
+			<div class="mb-3">
+	  			<input type="text" name="sale" placeholder="Введите скидку">
+			</div>
+			<div class="mb-3">
+	  			<input type="text" name="sale_end" placeholder="Введите дату окончания скидки">
+			</div>
+			<div class="mb-3">
+	  			<label for="formFile">Загрузите изображение</label>
+	  			<input class="form-control" type="file" id="formFile" name="image" onchange="encodeImageFileAsURL(this)">
+			</div>
+			<div class="mb-3">
+				<label for="formFileSm" class="form-label">Выберите город</label>
+				<select name="store">
+					<option>Смоленск</option>
+					<option>Москва</option>
+					<option>Тула</option>
+				</select>
+			</div>
+			<h3>Количество</h3>
+			<div class="add_cloth_size">
+				<label for="formFileSm" class="form-label">M</label>
+	  			<input type="text" name="M" placeholder="Введите количество">
+			</div>
+			<div class="add_cloth_size">
+				<label for="formFileSm" class="form-label">L</label>
+	  			<input type="text" name="L" placeholder="Введите количество">
+			</div>
+			<div class="add_cloth_size">
+				<label for="formFileSm" class="form-label">XL</label>
+	  			<input type="text" name="XL" placeholder="Введите количество">
+			</div>
+			<div class="add_cloth_size">
+				<label for="formFileSm" class="form-label">XXL</label>
+	  			<input type="text" name="XXL" placeholder="Введите количество">
+			</div>
+			<button type="submit" onclick="addCloth()">Добавить</button>
+		</form>
+	</div>
+	<div id="update_cloth">
+		<h3>Обновить ассортимент</h3>
+		<form id="update_cloth_form" action="#" method="#" >
+			<div class="mb-3">
+	  			<input style="outline: none;" name="name" type="text" placeholder="Введите название">
+			</div>
+			<div class="mb-3">
+	  			<input type="text" name="brand" placeholder="Введите бренд">
+			</div>
+			<div class="mb-3">
+	  			<input type="text" name="category" placeholder="Введите категорию">
+			</div>
+			<div class="mb-3">
+	  			<input type="text" name="gender" placeholder="Введите пол">
+			</div>
+			<div class="mb-3">
+	  			<input type="text" name="price" placeholder="Введите цену">
+			</div>
+			<div class="mb-3">
+	  			<input type="text" name="sale" placeholder="Введите скидку">
+			</div>
+			<div class="mb-3">
+	  			<input type="text" name="sale_end" placeholder="Введите дату окончания скидки">
+			</div>
+			<div class="mb-3">
+				<label for="formFileSm" class="form-label">Выберите город</label>
+				<select name="store">
+					<option>Смоленск</option>
+					<option>Москва</option>
+					<option>Тула</option>
+				</select>
+			</div>
+			<h3>Количество</h3>
+			<div class="update_cloth_size">
+				<label for="formFileSm" class="form-label">M</label>
+	  			<input type="text" name="M" placeholder="Введите количество">
+			</div>
+			<div class="update_cloth_size">
+				<label for="formFileSm" class="form-label">L</label>
+	  			<input type="text" name="L" placeholder="Введите количество">
+			</div>
+			<div class="update_cloth_size">
+				<label for="formFileSm" class="form-label">XL</label>
+	  			<input type="text" name="XL" placeholder="Введите количество">
+			</div>
+			<div class="update_cloth_size">
+				<label for="formFileSm" class="form-label">XXL</label>
+	  			<input type="text" name="XXL" placeholder="Введите количество">
+			</div>
+			<button type="submit" onclick="updateCloth()">Обновить</button>
+		</form>
+	</div>
+	<div id="show_orders">
+		<div id="show_clothes_store">
+			<form action="#" method="#" id="show_orders_form">
+				<select name="store">
+					<option>Смоленск</option>
+					<option>Москва</option>
+					<option>Тула</option>
+				</select>
+				<button type="submit" onclick="getOrders()">Посмотреть заказы магазина</button>
+			</form>
+		</div>
+		<table id="title_order">
+			<tr>
+				<th style="width: 5vw;">Номер</th>
+				<th style="width: 5vw;">Стоимость</th>
+				<th style="width: 7vw;">Имя заказчика</th>
+				<th style="width: 7vw;">Почта заказчика</th>
+				<th style="width: 5vw; text-align: right;">Место заказа</th>
+				<th style="width: 15vw; text-align: center;">Содержимое</th>
+			</tr>
+		</table>
+		<div id="show_orders_table">
+			<table id="table_show_orders">
+			</table>
+		</div>
+	</div>
+	<div id="update_order">
+		<!--Таблица-->
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="includes\scripts\admin.js"></script>
+</body>
+</html>

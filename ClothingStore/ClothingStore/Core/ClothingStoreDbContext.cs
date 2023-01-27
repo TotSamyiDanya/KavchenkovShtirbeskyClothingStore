@@ -30,7 +30,7 @@ namespace ClothingStore.Core
         }
         private string CreateConnectionString()
         {
-            string sql = File.ReadAllText("..\\..\\..\\sql.json");
+            string sql = File.ReadAllText("sqlStringsConnection.json");
             JObject jobj = JObject.Parse(sql);
             return jobj["0"]!.Value<string>()!;
         }

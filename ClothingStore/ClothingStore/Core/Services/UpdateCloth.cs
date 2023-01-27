@@ -1,6 +1,6 @@
 ﻿namespace ClothingStore.Core.Services
 {
-    public class AddCloth
+    public class UpdateCloth
     {
         public string ClothName { get; set; }
         public string ClothBrand { get; set; }
@@ -14,6 +14,5 @@
         public int ClothSizeL { get; set; }
         public int ClothSizeXL { get; set; }
         public int ClothSizeXXL { get; set; }
-        public string ClothImage { get; set; }
     }
 }
