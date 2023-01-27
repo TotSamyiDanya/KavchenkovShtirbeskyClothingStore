@@ -1,0 +1,4 @@
+{
+	/*"0":"Data Source=HOME-PC\\MYMSSERVER;Initial Catalog=MyStoreDb;User Id=Danil;Password=209;Trust Server Certificate=True"*/
+	"0":"Data Source=HOME-PC;Initial Catalog=ClothingStoreDb;User Id=Danil;Password=209;Trust Server Certificate=True"
+}
