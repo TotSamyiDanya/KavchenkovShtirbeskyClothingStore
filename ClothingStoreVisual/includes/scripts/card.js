@@ -48,7 +48,7 @@ async function getCard() {
 
 	let message = document.createElement('span');
 	message.className = 'message';
-	message.innerText = 'Текст';
+	message.innerText = '';
 	sizes.appendChild(message);
 
 	getSameClothes(jsoncontent[0][0]['ClothCategory'],jsoncontent[0][0]['ClothGender']);
@@ -136,6 +136,10 @@ function getStoreLocationLink() {
 function addInBasket(e) {
 	var form = document.getElementById('main_card_body_form');
 	form.addEventListener('submit', getFormValue);
+
+	let message = document.getElementsByClassName('message');
+	message[0].innerText = 'Товар добавлен в корзину';
+	message[0].style = 'color: white; font-size: 1.2vw;'
 }
 function getFormValue(e){
 	e.preventDefault();

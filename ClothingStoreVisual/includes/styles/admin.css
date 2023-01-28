@@ -107,3 +107,5 @@ button:hover { scale: 1.02; background-color: black; color: white; }
 #show_orders_table::-webkit-scrollbar-thumb {
   background-color: white;
 }
+
+.submit_message { font-size: 1.6vw; position: relative; margin-left: 1vw; }

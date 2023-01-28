@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "OrdersReport", "OrdersReport\OrdersReport.rptproj", "{B8F24C3C-7EDB-43F8-B594-0E1BA4F26E36}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		DebugLocal|Default = DebugLocal|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B8F24C3C-7EDB-43F8-B594-0E1BA4F26E36}.Debug|Default.ActiveCfg = Debug
+		{B8F24C3C-7EDB-43F8-B594-0E1BA4F26E36}.Debug|Default.Build.0 = Debug
+		{B8F24C3C-7EDB-43F8-B594-0E1BA4F26E36}.Debug|Default.Deploy.0 = Debug
+		{B8F24C3C-7EDB-43F8-B594-0E1BA4F26E36}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{B8F24C3C-7EDB-43F8-B594-0E1BA4F26E36}.DebugLocal|Default.Build.0 = DebugLocal
+		{B8F24C3C-7EDB-43F8-B594-0E1BA4F26E36}.Release|Default.ActiveCfg = Release
+		{B8F24C3C-7EDB-43F8-B594-0E1BA4F26E36}.Release|Default.Build.0 = Release
+		{B8F24C3C-7EDB-43F8-B594-0E1BA4F26E36}.Release|Default.Deploy.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {58D713A5-3EFB-4657-A91B-681626ECCBFC}
+	EndGlobalSection
+EndGlobal

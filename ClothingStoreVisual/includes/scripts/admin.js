@@ -86,6 +86,9 @@ async function getFormValueAddCloth(e) {
     };
     console.log(addcloth);
     sendReques("POST", "https://localhost:7073/Admin/AddCloth", addcloth);
+
+    var message = form.getElementsByTagName('span');
+    message[0].innerText = 'Одежда добавлена';
 }
 function updateCloth() {
 	var form = document.getElementById('update_cloth_form');
@@ -127,7 +130,10 @@ async function getFormValueUpdateCloth(e) {
     	clothSizeXXL: Number(clothXXL)
     };
 
+    var message = form.getElementsByTagName('span');
+
     sendReques("POST", "https://localhost:7073/Admin/UpdateCloth", cloth);
+    message[0].innerText = 'Ассортимент обновлен';
 }
 function getOrders() {
 	clearClothesStore();
